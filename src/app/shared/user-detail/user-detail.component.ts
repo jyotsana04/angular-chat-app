@@ -12,6 +12,9 @@ export class UserDetailComponent implements OnInit {
   @Input() userStatus: string;
   @Input() messageRead: string;
 
+  @Input() userBg: string;
+  @Input() userColor: string;
+
   
   public firstChar: string;
 

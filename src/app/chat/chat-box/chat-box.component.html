@@ -61,7 +61,7 @@
         <li class="clearfix cursorPointer" [ngClass]="{'activeChat': user.chatting == true}"
           *ngFor="let user of userList" (click)="userSelectedToChat(user.userId, user.name)">
           <div class="userPresence" *ngIf="user.userId != userInfo.userId"  >
-            <app-user-detail [userFirstName]="user.name" [userLastName]="''" [userStatus]="'online'" [messageRead]="user.unread"></app-user-detail>
+            <app-user-detail [userFirstName]="user.name" [userLastName]="''" [userStatus]="'online'" [messageRead]="user.unread" [userBg]="'blue'" [userColor]="'white'"></app-user-detail>
           </div>
         </li>
        
